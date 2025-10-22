@@ -1,5 +1,3 @@
-# HALF_ADDER_SUBTRACTOR
-
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
 **AIM:**
@@ -35,6 +33,16 @@ Figure -02 HALF Subtractor
 
 **Truthtable**
 
+HALF ADDDER:
+
+<img width="426" height="282" alt="outputonlinepngtools3" src="https://github.com/user-attachments/assets/6bd8953f-1666-4544-afc6-857c3ae70f60" />
+
+
+HALF SUBTRACTOR:
+
+<img width="242" height="148" alt="download" src="https://github.com/user-attachments/assets/b891f4b3-9ffa-4264-8863-05a22659edb1" />
+
+
 **Procedure**
 
 1.	Type the program in Quartus software.
@@ -50,32 +58,59 @@ Figure -02 HALF Subtractor
 
 **Program:**
 
-<img width="1072" height="236" alt="image" src="https://github.com/user-attachments/assets/96e284f9-d597-4f97-9fa9-a59be9266203" />
+**HALF ADDER:**
+
+module exp2(sum, carry, a, b);
+output sum;
+output carry;
+input a;
+input b;
+assign sum = a ^ b;
+assign carry = a & b;
+endmodule
+
+**HALF SUBTRACTOR:**
+
+module exp2(diff, borrow, a, b);
+output diff;
+output borrow;
+input a;
+input b;
+assign diff = a ^ b;
+assign borrow = ~a & b;
+endmodule
 
 /* Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: RegisterNumber:*/
-Developed by: S AVAN ARUL
+Developed by: avan arul
 
 RegisterNumber: 25009206
 
 **RTL Schematic**
 
-<img width="1065" height="600" alt="image" src="https://github.com/user-attachments/assets/02e123da-2a5d-46bf-b46e-0b925230d355" />
+**HALF ADDER:**
 
-<img width="1074" height="377" alt="image" src="https://github.com/user-attachments/assets/97b2f2d4-7a2d-42f2-bff4-ed766cbca8be" />
+<img width="1919" height="1079" alt="Screenshot 2025-10-07 155815" src="https://github.com/user-attachments/assets/9bb8e3d2-6892-440a-a0e9-0aa8a10c9643" />
 
+
+**HALF SUBTRACTOR:**
+
+<img width="1919" height="1079" alt="Screenshot 2025-10-07 160128" src="https://github.com/user-attachments/assets/299a9a16-ce5b-4517-ae0a-ca2f030520a6" />
 
 
 **Output/TIMING Waveform**
 
-<img width="1067" height="577" alt="image" src="https://github.com/user-attachments/assets/0c37e50f-e45e-4e46-9344-92a9cd3b7724" />
+**HALF ADDER:**
 
-<img width="1074" height="603" alt="image" src="https://github.com/user-attachments/assets/9db2797b-4b3d-4a1b-b693-1ac9328b1e65" />
+<img width="1919" height="1079" alt="Screenshot 2025-10-07 161137" src="https://github.com/user-attachments/assets/69c1e443-0100-4928-8150-b3eabab1ec15" />
 
 
+**HALF SUBTRACTOR:**
+
+<img width="1919" height="1079" alt="Screenshot 2025-10-07 161237" src="https://github.com/user-attachments/assets/7aaac347-da3a-4c0f-9806-2dff46186fa1" />
 
 
 **Result:**
+
 Program to design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming has been verified successfully.
 
